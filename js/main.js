@@ -1,53 +1,23 @@
-const reveals = document.querySelectorAll(".reveal");
+const counters=document.querySelectorAll(".stat h3");
 
-window.addEventListener("scroll", () => {
+const animateCounter=(el)=>{
+const target=+el.dataset.count;
+let count=0;
 
-reveals.forEach((el) => {
+const update=()=>{
 
-const top = el.getBoundingClientRect().top;
-const trigger = window.innerHeight * 0.85;
+count+=Math.ceil(target/40);
 
-if(top < trigger){
-el.classList.add("active");
+if(count>=target){
+el.innerText=target+"+";
+return;
 }
 
-});
-
-});
-
-
-// Lazy load projects
-
-setTimeout(()=>{
-
-const projects = [
-{
-name:"Sample Project",
-tech:"PHP, MySQL",
-link:"#"
-},
-{
-name:"Automation Platform",
-tech:"NodeJS, API",
-link:"#"
+el.innerText=count;
+requestAnimationFrame(update);
 }
-];
 
-const container = document.getElementById("projects-container");
+update();
+}
 
-projects.forEach(p=>{
-
-const card = document.createElement("div");
-card.className="project-card";
-
-card.innerHTML = `
-<h3>${p.name}</h3>
-<p>${p.tech}</p>
-<a href="${p.link}" target="_blank">View Project</a>
-`;
-
-container.appendChild(card);
-
-});
-
-},1500);
+counters.forEach(c=>animateCounter(c));

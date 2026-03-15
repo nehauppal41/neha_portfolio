@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio</title>
+<title>Neha | Mobile & Backend Software Consultant</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -13,94 +14,192 @@
 
 <body>
 
-<!-- HERO SECTION -->
+<header class="hero">
 
-<section class="hero">
-<div class="hero-content">
+<div class="hero-inner">
 
-<h1 class="fade-in">Hello, I'm a Developer</h1>
+<img src="assets/avatar.png" class="avatar">
 
-<p class="fade-in delay">
-13+ years building scalable web platforms, automation tools,
-and high-performance applications.
+<h1 class="title">
+Neha
+<span>Mobile & Backend Software Consultant</span>
+</h1>
+
+<p class="tagline">
+Delivering scalable mobile apps, backend systems and
+end-to-end digital products with dedicated development teams.
 </p>
 
+<div class="scroll-indicator">Scroll ↓</div>
+
 </div>
-</section>
+
+</header>
 
 
-<!-- ABOUT SECTION -->
+<section class="section">
 
-<section class="section reveal">
-
-<h2>About Me</h2>
+<h2>About</h2>
 
 <p>
 
-With 13+ years of development experience, I specialize in building
-production-ready applications, automation platforms, APIs,
-and scalable web systems.
+Neha is a Software Consultant with over 13 years of experience
+leading mobile and backend development projects across multiple
+industries.
 
-My work ranges from backend architecture to full product delivery.
+She works closely with clients to transform ideas into scalable
+digital products by defining architecture, planning product
+strategy and guiding development teams through the complete
+delivery lifecycle.
+
+Her consulting work spans mobile application architecture,
+backend APIs, database design, infrastructure planning and
+production deployment to the Apple App Store and Google Play
+Store.
 
 </p>
 
 </section>
 
 
+<section class="stats">
 
-<!-- CAREER TIMELINE -->
+<div class="stat">
+<h3 data-count="13">0</h3>
+<p>Years Experience</p>
+</div>
 
-<section class="section reveal">
+<div class="stat">
+<h3 data-count="100">0</h3>
+<p>Applications Delivered</p>
+</div>
+
+<div class="stat">
+<h3 data-count="50">0</h3>
+<p>Clients</p>
+</div>
+
+<div class="stat">
+<h3 data-count="10">0</h3>
+<p>Industries</p>
+</div>
+
+</section>
+
+
+<section class="section timeline">
 
 <h2>Career Journey</h2>
 
-<div class="timeline">
-
 <div class="timeline-item">
-<h3>Early Career</h3>
-<p>Started building web applications and automation tools.</p>
+<img src="assets/timeline/start.png">
+<div>
+<h3>2012</h3>
+<p>Started mobile and backend development.</p>
+</div>
 </div>
 
 <div class="timeline-item">
-<h3>Scaling Systems</h3>
-<p>Built scalable backend systems and large data processing pipelines.</p>
+<img src="assets/timeline/growth.png">
+<div>
+<h3>2015</h3>
+<p>Delivered first production scale applications.</p>
+</div>
 </div>
 
 <div class="timeline-item">
-<h3>Modern Architecture</h3>
-<p>Designing production systems and high availability applications.</p>
+<img src="assets/timeline/industries.png">
+<div>
+<h3>2018</h3>
+<p>Solutions delivered across multiple industries.</p>
+</div>
 </div>
 
+<div class="timeline-item">
+<img src="assets/timeline/architecture.png">
+<div>
+<h3>2021</h3>
+<p>Designing scalable architecture and backend systems.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<img src="assets/timeline/consultant.png">
+<div>
+<h3>2024</h3>
+<p>Freelance software consultant leading development teams.</p>
+</div>
 </div>
 
 </section>
 
 
-
-<!-- PROJECTS SECTION -->
-
-<section class="section reveal">
+<section class="section">
 
 <h2>Projects</h2>
 
-<div id="projects-container">
+<div class="filters">
 
-<!-- Projects will load here dynamically -->
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('mobile')">Mobile Apps</button>
+<button onclick="filterProjects('iot')">IoT</button>
+<button onclick="filterProjects('media')">Media</button>
+
+</div>
+
+<div id="projects"></div>
+
+</section>
+
+
+<section class="section why">
+
+<h2>Why Clients Work With Me</h2>
+
+<div class="why-grid">
+
+<div>
+<h3>Architecture First</h3>
+<p>Every project begins with proper system design ensuring long-term scalability.</p>
+</div>
+
+<div>
+<h3>Full Product Delivery</h3>
+<p>From idea validation to App Store and Play Store deployment.</p>
+</div>
+
+<div>
+<h3>Team Leadership</h3>
+<p>Managing development teams while maintaining code quality and timelines.</p>
+</div>
+
+<div>
+<h3>Multi-Industry Experience</h3>
+<p>Healthcare, media, IoT, eCommerce, utilities and more.</p>
+</div>
+
+<div>
+<h3>Reliable Freelance Partner</h3>
+<p>Transparent communication, milestone delivery and long-term support.</p>
+</div>
 
 </div>
 
 </section>
 
 
+<section class="contact">
 
-<footer>
+<h2>Contact</h2>
 
-<p>© 2026 My Portfolio</p>
+<a href="mailto:nehauppal41@gmail.com" class="email">
+Email Neha
+</a>
 
-</footer>
+</section>
 
 
+<script src="js/projects.js"></script>
 <script src="js/main.js"></script>
 
 </body>
