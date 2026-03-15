@@ -1,3 +1,4 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-<path fill="#1e3a8a" d="M320 32C143 32 0 175 0 352s143 320 320 320 320-143 320-320S497 32 320 32z"></path>
+<circle cx="320" cy="256" r="200" fill="#1e3a8a"/>
 </svg>
